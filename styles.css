@@ -1,0 +1,274 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    background-color: #dbfcff;
+}
+
+.header {
+    background-image: url('imgs/header-source.jpg');
+    background-repeat: no-repeat;
+    font-family: "Tsukimi Rounded";
+    text-align: center;
+}
+
+nav {
+    font-family: "Crimson Pro";
+    background-color: #4e599c;
+    font-size: 1.75rem;
+}
+
+#home_btn {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-item {
+    border-radius: 5px;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.nav-item:hover {
+    background-color: #838AB9;
+}
+
+.dropdown-menu {
+    background-color: #4e599c;
+    border-style: none;
+}
+
+.dropdown-item {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #838AB9;
+    color: white;
+}
+
+.navbar-collapse {
+    text-align: left;
+}
+
+.card {
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+#play_btn {
+    border-radius: 5px 5px 0px 0px;
+    /* background-color: #000051; */
+    background-color: #005959;
+}
+
+#icon {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+#img_div {
+    padding: 0rem;
+}
+
+img {
+    border-radius: 15px;
+}
+
+#card_img {
+    width: 100%;
+    display: none;
+}
+
+input {
+    max-width: 100%;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#answer:invalid + button {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.after {
+    display: none;
+}
+
+#next {
+    border-radius: 0 0 5px 5px;
+}
+
+#end_div {
+    display: none;
+}
+
+.game-title {
+    font-family: "Cherry Bomb One";
+    color: white;
+    margin-top: 0rem;
+    max-width: 100%;
+}
+
+.sticky-bottom {
+    margin: 0px;
+    border-radius: 0;
+    width: 100%;
+}
+
+#go_btn {
+    border-color: #202968;
+    color: #202968;
+}
+
+#go_btn:hover {
+    background-color: #202968;
+    color: white;
+}
+
+.grid-container {
+    display: inline-grid;
+    padding: 2rem;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    cursor: pointer;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .header {
+        font-size: 8vw;
+        background-size: 110vw;
+        background-position-y: -13vw;
+    }
+
+    .card {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        width: 100%;
+    }
+
+    #show_img {
+        margin: 1rem;
+    }
+
+    p {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .game-title {
+        font-size: 5rem;
+    }
+
+    a[role=button] {
+        font-size: 1.25rem;
+    }
+}
+
+/* Styles for screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    body {
+        font-size: 22px;
+    }
+
+    .header {
+        font-size: 7vw;
+        background-size: 108vw;
+        background-position-y: -14vw;
+
+    }
+
+    .card {
+        margin-left: 7.5%;
+        margin-top: 5%;
+        width: 85%;
+    }
+
+    #show_img {
+        margin: 1.5rem;
+    }
+
+    p {
+        margin: 1rem 4rem 0rem 4rem;
+    }
+
+    .game-title {
+        font-size: 6.5rem;
+    }
+
+    a[role=button] {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Styles for screens larger than 901px */
+@media (min-width: 901px) {
+
+    body {
+        font-size: 26px;
+    }
+
+    .header {
+        font-size: 6vw;
+        background-size: 106vw;
+        background-position-y: -15vw;
+
+    }
+
+    .card {
+        margin-left: 15%;
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    #show_img {
+        margin: 3rem;
+    }
+
+    p {
+        margin: 1.6rem 8rem 0rem 8rem;
+    }
+
+    .game-title {
+        font-size: 8rem;
+    }
+
+    a[role=button] {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* #lang_btn {
+    background-image: url("imgs/united-kingdom.png");
+    background-size: 100%;
+    background-position: center;
+    padding: 8px 12px;
+    border-radius: 50%;
+    border: 1px solid black;
+} */
