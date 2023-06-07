@@ -143,6 +143,15 @@ const quizData = {
       sound: "data/upupa.mp3",
       output: "<h2><i>Upupa epops</i></h2><br><b>Upupa eurasiatica</b><br>Upupidae<br>(Eurasian hoopoe)",
     },
+    verdone: {
+      fullScoreAnswers: ["chloris chloris"],
+      halfScoresAnswers: ["verdone", "verdone comune", "verdello", "european greenfinch", "greenfinch"],
+      lowerScoreAnswers: ["chloris"],
+      lowestScoreAnswers: ["fringillidae", "fringillidi", "true finch", "true finches", "finch"],
+      img: "data/verdone.jpg",
+      sound: "data/verdone.mp3",
+      output: "<h2><i>Chloris chloris</i></h2><br><b>Verdone</b><br>Fringillidae<br>(European greenfinch)",
+    },
     zigoloNero: {
       fullScoreAnswers: ["emberiza cirlus"],
       halfScoresAnswers: ["zigolo nero", "cirl bunting"],
