@@ -103,7 +103,7 @@ export const quizData = {
       halfScoresAnswers: ["gruccione", "gruccioni", "gruccione comune"],
       lowerScoreAnswers: ["merops"],
       lowestScoreAnswers: ["meropidae"],
-      img: "data/gruccione.png",
+      img: "data/gruccione.jpg",
       sound: "data/gruccione.mp3",
       output: "<h2><i>Merops apiaster</i></h2><br><b>Gruccione</b> (comune)<br>Meropidae<br>(European bee&#8209;eater)",
     },
