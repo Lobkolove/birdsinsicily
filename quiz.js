@@ -175,6 +175,7 @@ const toEnd = () => {
 
 const resetState = () => {
     let randomKeys = shuffle(keysArray);
+    console.log(randomKeys);
     state.total = 0;
     state.partialScore = 0;
     state.shownHint = false;
