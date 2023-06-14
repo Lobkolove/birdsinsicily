@@ -3,20 +3,19 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/bb97c228ba.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata&family=Cherry+Bomb+One&family=Bodoni+Moda&family=Tsukimi+Rounded">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="list.css" rel="stylesheet">
-        <script defer type="text/javascript" src="list.js"></script>
+        <script defer type="module" src="list.js"></script>
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" alt="Icon made by Valeria from www.flaticon.com">
         <title>Start</title>
     </head>
     <body>
         <div class="header">
-            <span id="header-text">Birds&emsp;&ensp;&emsp;&ensp;in&emsp;&ensp;&emsp;&ensp;Sicily</span>
+          <img src="imgs/header-l.png" alt="Header image" id="header">
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
           <ul class="navbar-nav">
@@ -50,7 +49,7 @@
         <br>
         <p>This is a comprehensive list of all species currently added to the game.</p>
         <p>
-          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#sDis" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#sDis" role="button" aria-expanded="false">
             SEXISM DISCLAIMER
           </a>
         </p>
@@ -62,7 +61,7 @@
           </p>
         </div>
         <p>
-          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#oDis" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#oDis" role="button" aria-expanded="false">
             ORIGIN DISCLAIMER
           </a>
         </p>
@@ -77,10 +76,10 @@
         <hr>
         <div class="grid-container" id="listGrid">
           <div class="grid-item item1">
-            <img src="" id="listImage">
+            <img src="imgs/generic-bird.png" alt="photo of a bird" id="listImage">
           </div>
           <div class="grid-item item2">
-            <audio controls preload="none" src="" id="listAudio"></audio>
+            <audio controls preload="none" id="listAudio"></audio>
             <p id="listText"></p>
           </div>
           <div class="grid-item item3">

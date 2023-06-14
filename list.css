@@ -4,11 +4,8 @@ body {
     background-color: #bbd2d8;
 }
 
-.header {
-    background-image: url('imgs/header-source.jpg');
-    background-repeat: no-repeat;
-    font-family: "Tsukimi Rounded";
-    text-align: center;
+#header {
+    width: 100vw;
 }
 
 nav {
@@ -94,15 +91,12 @@ hr {
 
 
 @media (max-width: 600px) {
-
     body {
         font-size: 20px;
     }
 
-    .header {
-        font-size: 8vw;
-        background-size: 110vw;
-        background-position-y: -13vw;
+    #header {
+        content:url(imgs/header-s.png);
     }
 
     #listImage {
@@ -129,20 +123,16 @@ hr {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-
 }
 
 
 @media (min-width: 601px) and (max-width: 900px) {
-
     body {
         font-size: 20px;
     }
 
-    .header {
-        font-size: 7vw;
-        background-size: 108vw;
-        background-position-y: -14vw;
+    #header {
+        content:url(imgs/header-m.png);
     }
 
     #listImage {
@@ -171,19 +161,11 @@ hr {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-
 }
 
 @media (min-width: 901px) {
-
     body {
         font-size: 24px;
-    }
-
-    .header {
-        font-size: 6vw;
-        background-size: 106vw;
-        background-position-y: -15vw;
     }
 
     #listImage {
@@ -214,5 +196,4 @@ hr {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
 }

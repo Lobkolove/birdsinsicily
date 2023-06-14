@@ -1,14 +1,11 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
-    background-color: #dbfcff;
+    background-color: #bbd2d8;
 }
 
-.header {
-    background-image: url('imgs/header-source.jpg');
-    background-repeat: no-repeat;
-    font-family: "Tsukimi Rounded";
-    text-align: center;
+#header {
+    width: 100vw;
 }
 
 nav {
@@ -53,9 +50,6 @@ nav {
 .card {
     border-radius: 6px;
     margin-bottom: 2rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
 .card-body {
@@ -64,7 +58,6 @@ nav {
 
 #play_btn {
     border-radius: 5px 5px 0px 0px;
-    /* background-color: #000051; */
     background-color: #005959;
 }
 
@@ -78,13 +71,18 @@ nav {
     padding: 0rem;
 }
 
-img {
-    border-radius: 15px;
-}
-
 #card_img {
     width: 100%;
     display: none;
+    border-radius: 15px;
+}
+
+.btn-ocre {
+    background-color: #efbb1a;
+}
+
+.btn-ocre:hover {
+    background-color: #f3993b;
 }
 
 input {
@@ -154,15 +152,12 @@ input:focus::placeholder {
 
 /* Styles for screens smaller than 600px */
 @media (max-width: 600px) {
-
     body {
         font-size: 20px;
     }
 
-    .header {
-        font-size: 8vw;
-        background-size: 110vw;
-        background-position-y: -13vw;
+    #header {
+        content:url(imgs/header-s.png);
     }
 
     .card {
@@ -190,16 +185,13 @@ input:focus::placeholder {
 
 /* Styles for screens between 601px and 900px */
 @media (min-width: 601px) and (max-width: 900px) {
-
     body {
         font-size: 22px;
     }
 
-    .header {
-        font-size: 7vw;
-        background-size: 108vw;
-        background-position-y: -14vw;
 
+    #header {
+        content:url(imgs/header-m.png);
     }
 
     .card {
@@ -223,21 +215,12 @@ input:focus::placeholder {
     a[role=button] {
         font-size: 1.5rem;
     }
-
 }
 
 /* Styles for screens larger than 901px */
 @media (min-width: 901px) {
-
     body {
         font-size: 26px;
-    }
-
-    .header {
-        font-size: 6vw;
-        background-size: 106vw;
-        background-position-y: -15vw;
-
     }
 
     .card {
@@ -262,13 +245,3 @@ input:focus::placeholder {
         font-size: 1.75rem;
     }
 }
-
-
-/* #lang_btn {
-    background-image: url("imgs/united-kingdom.png");
-    background-size: 100%;
-    background-position: center;
-    padding: 8px 12px;
-    border-radius: 50%;
-    border: 1px solid black;
-} */
