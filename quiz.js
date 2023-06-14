@@ -29,7 +29,6 @@ const state = {
   skipped: 0,
   submitted: false,
   count: 0,
-  espired: false,
 };
 
 const photo = document.querySelector("#card_img");
@@ -174,8 +173,8 @@ const toEnd = () => {
 };
 
 const resetState = () => {
-    let randomKeys = shuffle(keysArray);
-    console.log(randomKeys);
+    const keysArray = Object.keys(quizData);
+    randomKeys = shuffle(keysArray);
     state.total = 0;
     state.partialScore = 0;
     state.shownHint = false;
@@ -262,7 +261,7 @@ next.addEventListener("click", function () {
       // For the case this is a click to start a new round:
       img_div.style.display = "block";
 
-      let currentKey = randomKeys.pop();
+      currentKey = randomKeys.pop();
       if (currentKey) {
         state.current = quizData[currentKey];
         photo.src = state.current.img;
